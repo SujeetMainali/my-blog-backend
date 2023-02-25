@@ -50,7 +50,7 @@ app.post('/api/articles/:name/comments', async(req, resp)=>{
     });
     const article = await db.collection('Articles').findOne({ name });
      if (article) {
-        resp.send(article.comments)
+        resp.json(article)
      } else {
         resp.send('Article is not available')
      }
