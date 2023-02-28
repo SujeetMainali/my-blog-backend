@@ -57,8 +57,8 @@ app.post('/api/articles/:name/comments', async(req, resp)=>{
 
 })
 
-app.get('',(req, resp)=>{
-    resp.send("hwllo");
+app.get('/',(req, resp)=>{
+    resp.send("hello");
 })
 
 
